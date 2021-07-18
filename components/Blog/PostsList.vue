@@ -1,0 +1,44 @@
+<template>
+  <section class="post-list">
+    <div class="container">
+      <div class="posts__wrapper">
+        <postPreview
+          v-for="post in posts"
+          :key="post.id"
+          :admin="admin"
+          :post="post"
+        >
+        </postPreview>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import postPreview from "@/components/Blog/PostPreview.vue";
+
+export default {
+  components: {
+    postPreview,
+  },
+  props: {
+    posts: {
+      type: Array,
+      requried: true,
+    },
+    admin: {
+      type: Boolean,
+      default: false,
+    },
+  },
+};
+</script>
+
+<style lang="scss">
+.posts__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+</style>
