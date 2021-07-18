@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[19],{300:function(t,e,n){"use strict";n.r(e);var r={validate:function(t){var e=t.params;return/^\d+$/.test(e.id)}},l=n(4),component=Object(l.a)(r,(function(){var t=this,e=t.$createElement;return(t._self._c||e)("h1",[t._v("Статья №"+t._s(t.$route.params.id))])}),[],!1,null,null,null);e.default=component.exports}}]);
